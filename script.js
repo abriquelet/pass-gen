@@ -30,6 +30,19 @@ let generatePassword = function() {
   // Find way to call upon the actual data that needs to be mixed as opposed to boolean values.
   // Reference the variables within the function(the ones with prompts that are booleans) to confirm types used.
 
+        // CODE TO ADD CHOSEN TYPES TO STORAGE ARRAY
+
+
+        //
+
+        //console.log(passOptions.storage); to ensure data was placed into the array as the correct data type.
+
+  // Randomize contents of the array generated
+
+  //take the result and inject it into the provided text box on the page so it can be copied.
+  //inner.html?
+  // if that doesn't work, send a prompt formatted like so: "Your password is: chosenResult"
+
 }
 
 
