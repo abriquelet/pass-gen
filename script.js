@@ -4,6 +4,7 @@ let passOptions = {
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]",
+  // Data needs to be called from in here and sent into the storage array to be manipulated further down.
   storage:[]
 }
 // Below lies the function that runs when the button is clicked.
@@ -26,6 +27,9 @@ let generatePassword = function() {
   if (numberBool == false && upperBool == false && lowerBool == false && specBool == false) {
     window.alert("Error: Your password must contain at least one character type.")
   }
+  // Find way to call upon the actual data that needs to be mixed as opposed to boolean values.
+  // Reference the variables within the function(the ones with prompts that are booleans) to confirm types used.
+
 }
 
 
