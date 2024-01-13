@@ -32,6 +32,9 @@ let generatePassword = function() {
 
         // CODE TO ADD CHOSEN TYPES TO STORAGE ARRAY
 
+
+        //
+
         //console.log(passOptions.storage); to ensure data was placed into the array as the correct data type.
 
   // Randomize contents of the array generated
