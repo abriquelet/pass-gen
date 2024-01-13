@@ -42,6 +42,7 @@ let generatePassword = function() {
   //take the result and inject it into the provided text box on the page so it can be copied.
   //inner.html?
   // if that doesn't work, send a prompt formatted like so: "Your password is: chosenResult"
+  
 
 }
 
