@@ -3,6 +3,7 @@ let passOptions = {
   number: "1234567890",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
+  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
@@ -14,6 +15,7 @@ let generatePassword = function() {
   let upperBool = window.confirm("Include uppercase letters? (OK to include, cancel to proceed to next question).");
   let lowerBool = window.confirm("Include lowercase letters? (OK to include, cancel to proceed to next question).");
   let specBool = window.confirm("Include special characters? (OK to include, cancel to proceed to next question).");
+  //console.log to ensure booleans logged correctly
   //console.log to ensure booleans logged correctly
   console.log(charAmount, numberBool, upperBool, lowerBool, specBool);
   // alerts user that their desired length does not meet requirements.
@@ -48,9 +50,21 @@ let generatePassword = function() {
     console.log(storage);
     // expected output: string associated with var specChar behind any other strings the user selected.
   }
+  // Decare container that will hold the random result once it is calculated.
+  //this variable is what should connect to the html to be displayed
+  let userPassword = "";
+
+  //behold, math!
+  
+  // include the user inputted desired password length
+
+  //spit out result into userPassword
+
+  //inject into html
+
 }
 
-
+g
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
