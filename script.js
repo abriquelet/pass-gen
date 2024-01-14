@@ -3,7 +3,6 @@ let passOptions = {
   number: "1234567890",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
-  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
@@ -15,6 +14,8 @@ let generatePassword = function() {
   let upperBool = window.confirm("Include uppercase letters? (OK to include, cancel to proceed to next question).");
   let lowerBool = window.confirm("Include lowercase letters? (OK to include, cancel to proceed to next question).");
   let specBool = window.confirm("Include special characters? (OK to include, cancel to proceed to next question).");
+  //console.log to ensure booleans logged correctly
+  //console.log to ensure booleans logged correctly
   //console.log to ensure booleans logged correctly
   //console.log to ensure booleans logged correctly
   console.log(charAmount, numberBool, upperBool, lowerBool, specBool);
@@ -50,21 +51,22 @@ let generatePassword = function() {
     console.log(storage);
     // expected output: string associated with var specChar behind any other strings the user selected.
   }
-  // Decare container that will hold the random result once it is calculated.
-  //this variable is what should connect to the html to be displayed
+  //container for password
   let userPassword = "";
-
-  //behold, math!
-  
-  // include the user inputted desired password length
-
-  //spit out result into userPassword
-
-  //inject into html
-
-}
-
-g
+  for(i = 0; i < charAmount; i++) {
+    // sets 0 as the start point in the array and it ends at the chosen charAmount value.
+    let lengthReq = storage.substring(0, charAmount);
+  // below randomizes chosen values.
+    let locateSolution = Math.floor((Math.random() * storage.length));
+    userPassword = userPassword + storage[locateSolution];
+    //if statement to make length correct, substring names a beginning index and a value where to stop.
+    if (userPassword < charAmount) {
+      let shortPass = userPassword.substring(0, charAmount.length);
+    }
+  }
+  //injects password into the html
+  return userPassword;
+  }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
