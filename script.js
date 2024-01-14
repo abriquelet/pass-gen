@@ -16,6 +16,8 @@ let generatePassword = function() {
   let specBool = window.confirm("Include special characters? (OK to include, cancel to proceed to next question).");
   //console.log to ensure booleans logged correctly
   //console.log to ensure booleans logged correctly
+  //console.log to ensure booleans logged correctly
+  //console.log to ensure booleans logged correctly
   console.log(charAmount, numberBool, upperBool, lowerBool, specBool);
   // alerts user that their desired length does not meet requirements.
   if (charAmount <8 || charAmount >128) {
