@@ -4,6 +4,7 @@ let passOptions = {
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
+  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
 let generatePassword = function() {
@@ -14,6 +15,7 @@ let generatePassword = function() {
   let upperBool = window.confirm("Include uppercase letters? (OK to include, cancel to proceed to next question).");
   let lowerBool = window.confirm("Include lowercase letters? (OK to include, cancel to proceed to next question).");
   let specBool = window.confirm("Include special characters? (OK to include, cancel to proceed to next question).");
+  //console.log to ensure booleans logged correctly
   //console.log to ensure booleans logged correctly
   console.log(charAmount, numberBool, upperBool, lowerBool, specBool);
   // alerts user that their desired length does not meet requirements.
