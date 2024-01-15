@@ -4,6 +4,7 @@ let passOptions = {
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
+  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
 let generatePassword = function() {
