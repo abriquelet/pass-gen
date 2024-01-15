@@ -3,7 +3,7 @@ let passOptions = {
   number: "1234567890",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
-  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
+  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
