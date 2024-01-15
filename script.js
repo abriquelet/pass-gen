@@ -4,6 +4,7 @@ let passOptions = {
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lower: "abcdefghijklmnopqrstuvwxyz",
   specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
+  specChar: "!@#$%^&*()?.<\>|=+:;,[-_]"
 }
 // Below lies the function that runs when the button is clicked.
 let generatePassword = function() {
@@ -62,8 +63,7 @@ let generatePassword = function() {
     //if statement to make length correct, substring names a beginning index and a value where to stop.
     if (userPassword < charAmount) {
       let shortPass = userPassword.substring(0, charAmount.length);
-    }
-  }
+    } }
   //injects password into the html
   return userPassword;
   }
